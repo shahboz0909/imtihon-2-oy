@@ -1,0 +1,41 @@
+.header {
+  padding-top: 40px;
+}
+.header__header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__header-inner {
+  width: 431px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@include breakpoint-down(665px) {
+
+  .header__header-inner {
+    width: 400px;
+  }
+}
+
+@include breakpoint-down(625px) {
+
+  .header__header-inner {
+    width: 380px;
+  }
+}
+
+@include breakpoint-down(590px) {
+
+  .header__header-inner {
+    width: 357px;
+  }
+}
+@include breakpoint-down(551px) {
+
+  .header__header-inner {
+    width: 200px;
+  }
+}

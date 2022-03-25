@@ -1,0 +1,132 @@
+.ready__heading {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536B;
+  margin-bottom: 0;
+}
+
+.ready__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  left: 281px;
+}
+
+@include breakpoint-down(861px) {
+  .btn {
+    left: 284px;
+  }
+}
+@include breakpoint-down(836px) {
+  .ready__wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+  .btn {
+    width: 173px;
+    height: 48px;
+    position: absolute;
+    left: 448px;
+    padding: 16px 22px 14px 22px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FBFCFE;
+    background-color: #BA4270;
+    border-radius: 24px;
+    border: none;
+    cursor: pointer;
+  }
+  .input {
+    position: relative;
+    width: 445px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 18px;
+    background-color: #ffffff;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    border: none;
+    outline: none;
+  }
+
+  .form {
+position: relative;
+  }
+  
+}
+
+@include breakpoint-down(810px) {
+  .btn {
+    left: 435px;
+  }
+}
+
+@include breakpoint-down(780px) {
+  .input {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .btn {
+    width: 445px;
+    height: 48px;
+    top: 64px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@include breakpoint-down(500px) {
+  .btn {
+    width: 400px;
+  }
+  .input {
+    width: 400px;
+  }
+}
+
+@include breakpoint-down(440px) {
+  .btn {
+    width: 350px;
+  }
+  .input {
+    width: 350px;
+  }
+  .ready__heading {
+    font-size: 40px;
+  }
+}
+
+@include breakpoint-down(380px) {
+  .btn {
+    width: 327px;
+  }
+  .input {
+    width: 327px;
+  }
+  .ready__heading {
+    font-size: 32px;
+    line-height: 36px;
+  }
+}
+
+@include breakpoint-down(360px) {
+  .btn {
+    width: 260px;
+  }
+  .input {
+    width: 260px;
+  }
+}

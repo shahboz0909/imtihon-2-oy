@@ -1,0 +1,126 @@
+.middle__wrapper {
+  max-width: 1015px;
+  padding-top: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.middle__img {
+  width: 445px;
+  height: 284px;
+  border-radius: 5px;
+}
+
+.middle__inner {
+  width: 445px;
+}
+
+.middle__heading {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #36536B;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 16px;
+}
+
+.middle__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #6C8294;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+}
+
+@include breakpoint-down(1000px) {
+  .middle__img {
+    width: 400px;
+    height: 255px;
+  }
+  .middle__inner {
+    width: 400px;
+  }
+}
+
+@include breakpoint-down(873px) {
+  .middle__img {
+    width: 350px;
+    height: 220px;
+  }
+  .middle__inner {
+    width: 387px;
+  }
+}
+
+@include breakpoint-down(835px) {
+  .middle__wrapper {
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+  .middle__img {
+    width: 392px;
+    height: 250px;
+  }
+  .middle__inner {
+    width: 573px;
+  }
+  .middle__heading {
+    margin-top: 48px;
+  }
+}
+
+@include breakpoint-down(600px) {
+  .middle__wrapper {
+    flex-direction: column;
+    text-align: center;
+    margin-top: 0;
+  }
+  .middle__img {
+    width: 350px;
+    height: 226px;
+  }
+  .middle__inner {
+    width: 293px;
+  }
+  .middle__heading {
+    max-width: 400px;
+    margin-top: 40px;
+    font-size: 46px;
+    line-height: 40px;
+  }
+  .middle__text {
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@include breakpoint-down(437px) {
+  .container {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .middle__img {
+    width: 328px;
+    height: 209px;
+  }
+  .middle__heading {
+    max-width: 400px;
+    margin-top: 40px;
+    font-size: 35px;
+    line-height: 36px;
+  }
+  .middle__text {
+    width: 302px;
+    line-height: 28px;
+    font-size: 15px;
+}
+}

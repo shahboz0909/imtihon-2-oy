@@ -1,0 +1,251 @@
+.about-us {
+  background-color: rgb(27, 38, 47);
+  background-image: url("../../img/body-back.png");
+  background-repeat: no-repeat;
+  background-size: 780px 780px;
+  background-position-x: calc(50% - 570px);
+  background-position-y: calc(50% - 200px);
+}
+.about-us__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.about_us__list {
+  width: 536px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: -30px;
+}
+.about-us__item {
+  margin-top: 35px;
+}
+.about-us__href {
+  border: 1px solid #FBFCFE;
+  border-radius: 24px;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px 32px 15px 32px;
+}
+.about-us__href:hover {
+color: #000;
+background-color: #fff;
+}
+
+
+.about-us__inner {
+  max-width: 445px;
+}
+.about-us__heading {
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: -0.369231px;
+  color: #FBFCFE;
+  margin: 0;
+  padding: 0;
+}
+
+.about-us__text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 28px;
+  color: #FBFCFE;
+  mix-blend-mode: normal;
+  opacity: 0.7;
+  margin: 0;
+  padding: 0;
+  margin-top: 24px;
+  margin-bottom: 32px;
+}
+
+.tesla {
+  width: 129px;
+  height: 17px;
+}
+.microsoft {
+  width: 145px;
+  height: 31px;
+}
+.pocard {
+  width: 140px;
+  height: 27px;
+}
+.oracle {
+  width: 131px;
+  height: 17px;
+}
+.google {
+  width: 96px;
+  height: 33px;
+}
+.nvidia {
+  width: 137px;
+  height: 26px;
+}
+
+@include breakpoint-down(1045px) {
+  .about-us__heading {
+    font-size: 48px;
+    line-height: 50px;
+  }
+  .about-us__text {
+    width: 375px;
+  }
+  .about_us__list {
+    width: 490px;
+  }
+}
+@include breakpoint-down(960px) {
+  
+  .about_us__list {
+    width: 390px;
+    padding-right: 50px;
+  }
+  .about-us__item {
+    margin-bottom: 30px;
+  }
+}
+@include breakpoint-down(960px) {
+  
+  .about-us {
+    background-position-x: calc(50% );
+    background-position-y: calc(50% - 300px);
+    background-size: cover;
+  }
+  
+}
+
+@include breakpoint-down(850px) {
+  
+  .about_us__list {
+    width: 365px;
+    padding-right: 25px;
+  }
+  
+}
+
+@include breakpoint-down(835px) {
+  .about-us__wrapper {
+    flex-direction: column-reverse;
+    padding-bottom: 88px;
+    padding-top: 88px;
+  }
+  .about_us__list {
+    width: 536px;
+    padding: 0;
+  }
+  .about-us__inner {
+    margin-top: 64px;
+    text-align: center;
+  }
+  .about-us__item {
+    margin-bottom: 16px;
+  }
+}
+
+@include breakpoint-down(736px) {
+  
+
+  .about_us__list {
+    width: 536px;
+}
+.about-us__heading {
+  font-size: 48px;
+  line-height: 56px;
+}
+.about-us__text {
+  font-size: 15px;
+  line-height: 28px;
+}
+}
+
+@include breakpoint-down(600px) {
+  
+
+  .about_us__list {
+    width: 500px;
+}
+.about-us__item {
+  margin-bottom: 0;
+}
+.about-us__inner {
+  margin-top: 40px;
+}
+}
+
+@include breakpoint-down(550px) {
+  
+  .about-us__heading {
+    font-size: 42px;
+    line-height: 35px;
+  }
+  .about_us__list {
+    width: 350px;
+}
+.about-us__text {
+  width: 327px;
+  width: 327px;
+  margin: 0;
+  padding: 0;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 15px;
+}
+
+}
+
+@include breakpoint-down(410px) {
+  .about_us__list {
+    width: 280px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.tesla {
+  width: 107px;
+  height: 15px;
+}
+.microsoft {
+  width: 120px;
+  height: 26px;
+}
+.pocard {
+  width: 115px;
+  height: 22px;
+}
+.oracle {
+  width: 108px;
+  height: 14px;
+}
+.google {
+  width: 79px;
+  height: 27px;
+}
+.nvidia {
+  width: 113px;
+  height: 22px;
+}
+.about-us__heading {
+  font-size: 32px;
+  line-height: 36px;
+}
+.about-us__text {
+  font-size: 15px;
+  line-height: 28px;
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+}

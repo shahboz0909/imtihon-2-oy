@@ -1,0 +1,131 @@
+.hero__wrapper {
+  padding-top: 74px;
+  max-width: 1015px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 75px;
+}
+.hero__heading {
+  max-width: 546px;
+  font-family: 'DM Serif Display';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  color: #36536B;
+  margin: 0;
+  padding: 0;
+}
+.hero__img {
+  display: block;
+  width: 263px;
+  height: 500px;
+  border-radius: 32px;
+}
+.hero__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgb(156, 172, 185);
+  margin-left: 25px;
+}
+
+.hero__spn {
+  font-weight: 700;
+  color: rgb(108, 130, 148);
+}
+
+@include breakpoint-down(950px) {
+  .hero__heading {
+font-size: 58px;
+line-height: 66px;
+}
+
+}
+
+@include breakpoint-down(860px) {
+  .hero__heading {
+    max-width: 420px;
+    font-size: 55px;
+}
+
+}
+@include breakpoint-down(800px) {
+  .hero__img {
+    width: 230px;
+    height: 440px;
+  }
+}
+
+@include breakpoint-down(775px) {
+  .hero__wrapper {
+    flex-direction: column-reverse;
+  }
+  .hero__heading {
+    padding-top: 48px;
+    max-width: 573px;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    letter-spacing: -0.369231px;
+    color: #36536B;
+  }
+  .hero__img {
+    width: 156px;
+    height: 300px;
+    border-radius: 20px;
+  }
+  .hero__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@include breakpoint-down(590px) {
+  .hero__heading {
+    max-width: 450px;
+    font-size: 40px;
+  }
+  .hero__img {
+    width: 140px;
+    height: 270px;
+    border-radius: 19px;
+  }
+}
+
+@include breakpoint-down(460px) {
+  .hero__heading {
+    max-width: 327px;
+    font-size: 32px;
+    line-height: 36px;
+  }
+  .hero__img {
+    width: 140px;
+    height: 270px;
+    border-radius: 19px;
+  }
+  .hero__text {
+    margin-top: 88px;
+    margin-left: 0;
+  }
+}
+
+@include breakpoint-down(400px) {
+  .hero__wrapper {
+    padding-top: 50px;
+  }
+  .hero__img {
+    width: 125px;
+    height: 240px;
+    border-radius: 18px;
+  }
+  .hero__heading {
+    max-width: 280px;
+    font-size: 28px;
+    line-height: 34px;
+  }
+  
+}

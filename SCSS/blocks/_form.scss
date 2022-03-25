@@ -1,0 +1,99 @@
+.hero__form {
+  margin-top: 50px;
+  position: relative;
+}
+.form__input {
+  
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 16px 240px 14px 27px;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+  border-radius: 24px;
+  border: none;
+  outline: none;
+}
+.form__input::placeholder {
+  color: #36536B;
+  opacity: 0.5;
+
+}
+
+.form__btn {
+  
+  position: absolute;
+  left: 284px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FBFCFE;
+  background-color: #BA4270;
+  padding: 16px 24px 14px 26px;
+  border-radius: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.form__btn:hover {
+  background-color: rgb(186, 66, 112);
+  opacity: 0.75;
+}
+.form__btn:active {
+  background-color: rgb(218, 109, 151);
+}
+
+@include breakpoint-down(860px) {
+  .form__input  {
+    padding: 16px 243px 14px 27px;
+}
+
+}
+
+@include breakpoint-down(800px) {
+  .form__btn {
+    left: 202px;
+  }
+  .form__input  {
+    padding: 16px 160px 14px 27px;
+  }
+}
+
+@include breakpoint-down(775px) {
+  .form__btn {
+    left: 201px;
+  }
+
+}
+@include breakpoint-down(590px) {
+  .hero__form {
+    margin-top: 30px;
+  }
+
+}
+
+@include breakpoint-down(460px) {
+  .form__input  {
+    display: block;
+  }
+  .form__btn {
+    left: 0;
+    top: 64px;
+    padding: 15px 134px 15px 116px;
+  }
+  
+}
+@include breakpoint-down(400px) {
+  .form__input  {
+    padding: 14px 90px 14px 27px;
+  }
+  .form__btn {
+    left: 0;
+    right: 0;
+    top: 64px;
+    padding: 14px 70px 14px 70px;
+  }
+  
+}
